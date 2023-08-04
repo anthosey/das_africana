@@ -1,0 +1,22 @@
+.g-plate {
+    background-color: #050c15; opacity: .8; border-radius: 0%;
+    padding: 2rem; font-size: 4rem; 
+  }
+
+  #download-box {
+
+  }
+
+  #download-box a {
+    text-decoration: none;
+  }
+
+  
+  #download-box a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    border-style: dotted;
+    border-color: var(--ion-var-warning-tint);
+    padding: .6rem;
+
+  }

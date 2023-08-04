@@ -1,0 +1,81 @@
+<ion-header>
+<ion-toolbar class="menu-top"  color="secondary">
+  
+      <ion-buttons slot="start">
+        <ion-button (click)="closeModal()"><ion-icon name="close-outline"></ion-icon></ion-button>
+      </ion-buttons>
+  
+      <ion-title>Members</ion-title>    
+      
+    </ion-toolbar>
+
+  </ion-header>
+
+  <ion-content>
+    <form #f="ngForm" (ngSubmit) ="onAddNew(f)">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Company name</ion-label>
+            <ion-input type="text" id="name" name="name" ngModel required></ion-input>
+          </ion-item>
+
+
+          <ion-item>
+            <ion-label position="floating">Office Address</ion-label>
+            <ion-input type="text" id="address" name="address" ngModel></ion-input>
+          </ion-item>
+
+
+          <!-- <ion-item> -->
+            <!-- <ion-label position="floating">Registered Function</ion-label> -->
+      
+
+
+          <ion-item>
+            <ion-label position="floating">Phone Number</ion-label>
+            <ion-input type="text" id="phone" name="phone" ngModel></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Email Address</ion-label>
+            <ion-input type="email" id="email" name="email" ngModel required></ion-input>
+          </ion-item>
+
+
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <ion-item>
+            <ion-label>Registered Function</ion-label>
+            <ion-select 
+            value="brown" 
+            okText="Okay" 
+            cancelText="Dismiss"
+            type="text" id="regFunction" name="regFunction" ngModel required>
+              <ion-select-option value="Broker Dealer">Broker Dealer</ion-select-option>
+              <ion-select-option value="Dealer">Dealer</ion-select-option>
+              <ion-select-option value="Broker">Broker</ion-select-option>
+              
+            </ion-select>
+          </ion-item>
+        
+        </ion-list>
+  
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="ion-text-end">
+          <ion-button type="submit"  color="secondary" size="large" fill="solid">Create Member</ion-button>
+        </ion-col>
+      </ion-row>
+
+      
+    </ion-grid>
+  </form>
+  </ion-content>

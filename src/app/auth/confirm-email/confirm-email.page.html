@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onCancel()"><ion-icon name="arrow-back"></ion-icon></ion-button>
+     </ion-buttons>
+     
+    <ion-title>Email Verification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #f="ngForm" (ngSubmit) = "onSubmit(f)">
+    <div style="height: 20px;"></div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3">
+      <img src="assets/img/logo_small.jpg" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row padding class="ion-text-center">
+      <ion-col size-sm="6" offset-sm="3">
+        <ion-card-title>We have sent a verification code to your email: {{ email }}. Please enter the code below:</ion-card-title>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3">
+        
+        <!-- <ion-item class="bordered-item"> -->
+          
+          <ion-card-title><strong><ion-input name="token" id="token" type="text" maxlength="6" class="ion-text-center" autofocus="true" ngModel required clearOnEdit></ion-input></strong></ion-card-title>
+        <!-- </ion-item> -->
+  
+      </ion-col>
+    </ion-row>
+
+    
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3">
+        <ion-button type="submit" class="black-button" fill="solid" expand="block" size="large" [disabled] ="!f.valid">Proceed</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3">
+        <ion-card-title (click) ="reSendEmail()" color="warning">Please check your <strong>Spam folder</strong> if the email is not found in your inbox. <strong>Click here</strong> to resend.</ion-card-title>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</form>
+</ion-content>

@@ -1,0 +1,67 @@
+<ion-app>
+
+    <ion-menu class="logo-toolbar">
+     
+      <ion-content class="menu-back">
+        <ion-list color="primary"  no-padding>
+          <ion-item>
+            <!-- <ion-avatar slot="start"> -->
+              <img src="/assets/img/logo1.png" class="image-logo" alt="DAS AFRICANA">
+            <!-- </ion-avatar> -->
+            <!-- <ion-card-title>{{ user.firstName }}</ion-card-title> -->
+          </ion-item>
+  
+          <ion-menu-toggle>
+            <ion-item lines="none" routerLink="/home">
+              <!-- <ion-icon slot="start" name="person"></ion-icon> -->
+              <!-- <ion-icon slot="start" name="chatbox-ellipses-outline"></ion-icon> -->
+                <span class="menu-text">Home</span>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/services">
+            <!-- <ion-icon slot="start" name="services"></ion-icon> -->
+              <span class="menu-text">Our Services</span>
+          </ion-item>
+        </ion-menu-toggle>
+    
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/menu">
+            <!-- <ion-icon slot="start" name="food"></ion-icon> -->
+              <span class="menu-text">Menu</span>
+          </ion-item>
+        </ion-menu-toggle>
+  
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/about">
+            <!-- <ion-icon slot="start" name="restaurant"></ion-icon> -->
+              <span class="menu-text">About us</span>
+          </ion-item>
+        </ion-menu-toggle>
+  
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/contact">
+            <!-- <ion-icon slot="start" name="person"></ion-icon> -->
+            <!-- <ion-icon slot="start" name="chatbox-ellipses-outline"></ion-icon> -->
+              <span class="menu-text">Contact</span>
+          </ion-item>
+        </ion-menu-toggle>
+  
+        <!-- <ion-menu-toggle>
+          <ion-item lines="none" (click)="onLogout()">
+            <ion-icon name="log-out-outline" slot="start"></ion-icon>
+          <span class="menu-text">Logout</span>
+          </ion-item>
+        </ion-menu-toggle> -->
+
+
+
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+  
+    <!-- <ion-router-outlet id="main-content"></ion-router-outlet> -->
+    <ion-router-outlet main></ion-router-outlet>
+  <!-- </ion-split-pane> -->
+</ion-app>

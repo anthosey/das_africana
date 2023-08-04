@@ -1,0 +1,634 @@
+<!-- <ion-header> -->
+  <ion-toolbar class="menu-top ion-hide-sm-up">
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+
+    <!-- <ion-title>dash</ion-title> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size-sm="5" offset-sm="1" class="ion-text-start contact-space" >
+          <a href="#" id="email" class="fa fa-envelope"></a>
+          <!-- <span id="email1">info@ashonng.org</span>&nbsp; -->
+          <ion-note color="light"><ion-icon name="call"></ion-icon> 01902229306</ion-note>
+        </ion-col>
+
+
+        <ion-col size-sm="5" class="ion-text-end">
+          <!-- <ion-buttons slot="end"> -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            
+         
+            <!-- <ion-menu-button menu="first"></ion-menu-button> -->
+          <!-- <ion-button><ion-icon name="person">Login</ion-icon></ion-button> -->
+        <!-- </ion-buttons> -->
+        </ion-col>
+
+        <!-- <ion-col size-sm="2" class="ion-text-end">
+          <a href="#" class="fa fa-user"></a><span>Login</span>
+        </ion-col> -->
+      </ion-row>
+    </ion-grid>  </ion-toolbar>
+
+<!-- </ion-header> -->
+
+<ion-content>
+  <div class="head-logo">
+    <ion-row >
+
+      <ion-col size-sm="4" size-xs="12" class="ion-text-center">
+        <!-- <img src="/assets/img/logo1.png">
+         -->
+         <div style="height: 140px; background-image: url('assets/img/logo1.png'); background-position: center;
+              background-repeat: no-repeat;"></div>
+      </ion-col>
+
+      
+      <ion-col size-sm="3" offset-sm="1" class="ion-text-left head-space ion-hide-sm-down">
+        <ion-note class="head-contact"><ion-icon name="mail"></ion-icon> info@dasafricana.com</ion-note><br />
+        
+          <ion-label class="head-contact" style="font-size: 1.5rem;"><ion-icon name="call"></ion-icon> 01902229306</ion-label>
+      </ion-col>
+      
+        
+
+        <ion-col size-sm="3" class="ion-text-end head-space ion-hide-sm-down">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <!-- <i class="fa fa-instagram" aria-hidden="true"></i> -->
+          <!-- <a href="login" class="fa fa-user"></a><span style="cursor: pointer" (click)="login()">Login</span> -->
+        </ion-col>
+    </ion-row>
+  </div>
+
+  <div id="ribbon-section" class="ion-hide-sm-down">
+    <!-- Category Section -->
+    <ion-row>
+      <ion-col size-sm="7" offset-sm="1"
+       id="links" 
+       class="ion-text-start"
+       style="padding-right: .5rem;">
+       
+         
+         
+         <a href="home">Home</a>
+         <a href="about">About us</a>
+         <!-- <a href="gallery">Gallery</a> -->
+         <!-- <a href="code">Code of Conduct</a> -->
+         <!-- <a href="pub-members">Members</a> -->
+         <a href="services" class="active">Our Services</a>
+         <a href="menu">Menu</a>
+         <a href="contact">Contact us</a>
+         
+
+       </ion-col>
+       
+   
+       <ion-col size-sm="3"
+       class="ion-hide-sm-down ion-text-end ion-no-padding ion-no-margin ion-text-end" 
+       id="menu-phone">
+         <!-- <span>      
+         <a href="#" class="fa fa-phone ion-no-padding"></a>
+             +23480-2344-3614</span>  -->
+         </ion-col>
+       </ion-row>
+  </div>
+
+  <div class="service-head"> 
+    <ion-card-title color="light" class="ion-text-center">
+      <div class="g-plate">Our Services</div>
+      
+    </ion-card-title>
+    <!-- <ion-note class="ion-text-center">Association of Secirities Dealing Houses of Nigeria</ion-note> -->
+  </div>
+
+  <div class="ion-text-center space-header" >
+    <ion-row> <!-- Featured Products-->
+      <ion-col size-sm="10" 
+      offset-sm="1">
+        <!-- <ion-card>
+          <ion-card-header>FEATURED PRODUCTS -->
+            Our Service Offerings
+          <!-- </ion-card-header>
+        </ion-card> -->
+          </ion-col>
+    </ion-row>
+</div>
+ 
+<form #f="ngForm" (ngSubmit) ="onProceed(f)">
+    <ion-row>
+      <ion-col size-sm="10" offset-sm="1">
+        <ion-grid>
+          <ion-row>
+          
+            <ion-col size-sm="12" size-xs="12" >
+              <div style="height: 300px; background-image: url('/assets/img/inner-images/catering_inner2.jpg'); background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover; border-radius: .8rem;"></div>
+            </ion-col>
+
+            <ion-col size-sm="12" size-xs="12" class="leftPad">
+              <div style="font-size: 1.8rem; ">Catering Services</div>
+              <p class="ion-text-justify">Our catering services showcase the richness and diversity of African cuisine. We offer a variety of menus that cater to all types of events, including corporate events, weddings, birthdays, and special occasions. Our experienced chefs use the freshest and highest quality ingredients to prepare authentic African dishes that will delight your taste buds. We also offer vegan, vegetarian, gluten-free, and halal options upon request.
+              </p>
+            <ion-row>
+              <ion-col size-sm="12" class="ion-text-end">
+                <ion-button (click)="onCatering()" fill="solid" class="ion-align-items-stretch" >Contact us</ion-button>  
+              </ion-col>
+            </ion-row>
+              
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            
+          </ion-row>
+        </ion-grid>
+        
+      </ion-col>
+      
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col size-sm="10" offset-sm="1">
+        <ion-grid>
+          <ion-row>
+          
+            <ion-col size-sm="6" size-xs="12" >
+              <div style="height: 280px; background-image: url('/assets/img/inner-images/events_inner.jpg'); background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover; border-radius: .8rem;"></div>
+            </ion-col>
+
+            <ion-col size-sm="6" size-xs="12" class="leftPad">
+              <div style="font-size: 1.8rem; ">Event Planning and Management</div>
+              <p class="ion-text-justify">Our event planning and management services ensure that your event is a success from start to finish. We work closely with you to understand your vision, goals, and budget, and then create a customized plan that meets your specific needs. We handle everything from venue selection and décor to entertainment and logistics, ensuring that everything runs smoothly on the day of your event.
+              </p>
+
+              <ion-row>
+                <ion-col size-sm="12" class="ion-text-end">
+                  <ion-button (click)="onEventManagement()" class="ion-align-items-stretch">Contact us</ion-button>  
+                </ion-col>
+              </ion-row>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+      </ion-col>
+      
+    </ion-row>
+
+
+
+    <ion-row>
+      <ion-col size-sm="10" offset-sm="1">
+        <ion-grid>
+          <ion-row>
+          
+            <ion-col size-sm="6" size-xs="12" >
+              <div style="height: 280px; background-image: url('/assets/img/inner-images/rentals_inner2.jpg'); background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover; border-radius: .8rem;"></div>
+            </ion-col>
+
+            <ion-col size-sm="6" size-xs="12" class="leftPad" >
+              <div style="font-size: 1.8rem; " >Event Rentals</div>
+              <p class="ion-text-justify">We offer a wide range of event rentals to enhance your event experience. Our inventory includes tables, chairs, linens, décor, lighting, and audio-visual equipment, among others. We ensure that all our rental equipment is of the highest quality and in excellent condition, to give your event a professional and polished look.
+                At DAS Africana catering and event management services, we pride ourselves on our attention to detail, excellent customer service, and professionalism. Contact us today to learn more about our services and how we can make your next event a success.
+                
+              </p>
+
+              
+              <ion-row>
+                <ion-col size-sm="12" class="ion-text-end">
+                  <ion-button (click)="onEventRentals()" class="ion-align-items-stretch">Contact us</ion-button>  
+                </ion-col>
+              </ion-row>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+      </ion-col>
+      
+    </ion-row>
+
+<div class="ion-text-center space-header" >
+  <ion-row>
+    <ion-col size-sm="10" 
+    offset-sm="1">
+      Other Special Services
+        </ion-col>
+  </ion-row>
+</div>
+
+
+
+
+<!-- Services List -->
+<ion-row>
+  <ion-col size-sm="10" offset-sm="1">
+    <ion-grid>
+      <ion-row>
+      
+        <ion-col size-sm="3" size-xs="12" size-md="4">
+          <ion-card class="small-rad">
+            
+            <ion-card-content id="card-content" class="ion-text-center no-space">
+              <!-- <img src= "assets/img/council-members/1.jpg" class="no-space"> -->
+              
+              <ion-card-title class="col-class big-title2">Special Events</ion-card-title>
+              
+              <ion-card-subtitle class="col-class">From birthday parties to anniversary dinners, special celebrations and family gatherings, we cater for all occasions. In addition to providing the food, we can do equipment hire, as well as provide waiters, mixologists etc.</ion-card-subtitle>
+              
+              <ion-button (click)="onSpecialEvents()" color="secondary">Book now</ion-button>
+            </ion-card-content>
+          </ion-card>  
+          
+        </ion-col>
+
+        <ion-col size-sm="3" size-xs="12" size-md="4">
+          <ion-card class="no-space small-rad">
+            
+            <ion-card-content id="card-content" class="ion-text-center no-space">
+              <!-- <img src= "assets/img/community.jpg" class="no-space"> -->
+              <ion-card-title class="col-class big-title2">Private Dinning </ion-card-title>
+              <ion-card-subtitle class="col-class">Whether it is an intimate meal for a couple, or large group, we can cater for any number of guests. We will take you step by step through all our options, creating your ideal bespoke menu, according to your preference and taste.</ion-card-subtitle>
+              
+              <ion-button (click)="onPrivateDining()" color="secondary">Book now</ion-button>
+            </ion-card-content>
+          </ion-card>  
+          
+        </ion-col>
+
+        
+        <ion-col size-sm="3" size-xs="12" size-md="4">
+          <ion-card class="no-space small-rad">
+            
+            <ion-card-content id="card-content" class="ion-text-center no-space">
+              <!-- <img src= "assets/img/council-members/3.jpg" class="no-space"> -->
+              <ion-card-title class="col-class big-title2">Festive Catering Menus</ion-card-title>
+              <ion-card-subtitle class="col-class">Welcome to our Seasonal Special page! Here, we bring our yearly Festive Menus, following the celebrations and festivities that the year brings us.  
+                </ion-card-subtitle>
+                <div style="height:20px"></div>
+                <ion-button (click)="onFestiveCatering()" color="secondary">Book now</ion-button>
+            </ion-card-content>
+          </ion-card>  
+          
+        </ion-col>
+
+
+      </ion-row>
+    </ion-grid>
+    
+  </ion-col>
+  
+</ion-row>
+
+
+</form>
+
+<div class="ion-text-center space-header" >
+  <ion-row> <!-- Featured Products-->
+    <ion-col size-sm="10" 
+    offset-sm="1">
+      <!-- <ion-card>
+        <ion-card-header>FEATURED PRODUCTS -->
+          Other Catering Event Services
+        <!-- </ion-card-header>
+      </ion-card> -->
+        </ion-col>
+  </ion-row>
+</div>
+
+
+<ion-row>
+  <ion-col size-sm="5" size-xs="12" offset-sm="1">
+    <ion-list>
+      <ion-item>
+        TABLE CLOTHS..............£8 per table
+      </ion-item>
+
+      <ion-item>
+        PLATES, GLASSES & CULERY ..£3 per set
+      </ion-item>
+    </ion-list>
+  </ion-col>
+  
+  <ion-col size-sm="5" size-xs="12">
+    <ion-list>
+      <ion-item>
+        TABLE CLOTHS..............£8 per table
+      </ion-item>
+
+      <ion-item>
+        PLATES, GLASSES & CULERY ..£3 per set
+      </ion-item>
+
+    </ion-list>
+  </ion-col>
+
+</ion-row>
+
+<ion-row>
+  
+    <ion-col size-sm="10" class="ion-text-center" size-xs="12" offset-sm="1">
+      <span class="lblStyle">Allergens </span>
+    </ion-col>
+    
+    <ion-col class="ion-text-center" size-sm="10" size-xs="12" offset-sm="1">
+      
+      Should you need further information about the cooking of your meal or you have any allergies, please ask when placing your order.
+    </ion-col>
+</ion-row>
+
+
+  <!-- ---Starts Testimonials---- -->
+<div class="spaceH_20"></div>
+<div class="ion-no-padding ion-no-margin">
+  <ion-row>
+    <ion-col size-sm="12" size-xs="12" class="ion-no-padding">
+      
+      
+      <div class="ion-text-center space-header" >
+        <ion-row>
+          <ion-col size-sm="10" 
+          offset-sm="1">A few kind words from our clients.
+              </ion-col>
+        </ion-row>
+      </div>
+      
+
+      <ion-row>
+        <ion-col size-sm="3" size-xs="12" size-md="3">
+          <ion-card>
+            
+            <ion-card-content id="card-content" class="ion-text-center">
+              <div class="spaceH_20 quotes">“</div>
+              <div class="spaceH_20"></div>
+              <ion-card-title>“Lunch was absolutely divine!! Compliments to you from all. Loads of food, everyone happy and well fed!”</ion-card-title>
+              <div class="spaceH_10"></div>
+              <p>Private Client</p>
+              
+            </ion-card-content>
+          </ion-card>  
+          
+        </ion-col>
+    
+        <ion-col size-sm="3" size-xs="12" size-md="3">
+          <ion-card>
+            
+            <ion-card-content id="card-content" class="ion-text-center">
+              <div class="spaceH_20 quotes">“</div>
+              <div class="spaceH_20"></div>
+              <ion-card-title>“Catering service at Das Africana is simply amazing, the staff members are friendly, caring and very courteous.”</ion-card-title>
+              <div class="spaceH_10"></div>
+              <p>Private Client</p>
+              
+            </ion-card-content>
+          </ion-card>  
+          
+        </ion-col>
+
+        <ion-col size-sm="3" size-xs="12" size-md="3">
+          <ion-card>
+            
+            <ion-card-content id="card-content" class="ion-text-center">
+              <div class="spaceH_20 quotes">“</div>
+              <div class="spaceH_20"></div>
+              <ion-card-title>“We had a great experience at Das Africana. True African foods, well prepared for everyone.”</ion-card-title>
+              <div class="spaceH_10"></div>
+              <p>Private Client</p>
+              
+            </ion-card-content>
+          </ion-card>  
+          
+        </ion-col>
+
+        <ion-col size-sm="3" size-xs="12" size-md="3">
+          <ion-card>
+            
+            <ion-card-content id="card-content" class="ion-text-center">
+              <div class="spaceH_20 quotes">“</div>
+              <div class="spaceH_20"></div>
+              <ion-card-title>““Lunch was absolutely divine!! Compliments to you from all. Loads of food, everyone happy and well fed!”</ion-card-title>
+              <div class="spaceH_10"></div>
+              <p>Private Client</p>
+              
+            </ion-card-content>
+          </ion-card>  
+          
+        </ion-col>
+
+      </ion-row>
+
+
+    </ion-col>
+  </ion-row>
+</div>
+<!-- End of testimonial -->
+
+
+
+<!-- Display of Testimonials -->
+
+<div class="ion-no-padding ion-no-margin">
+  <ion-row>
+    <ion-col size-sm="12" size-xs="12" class="ion-no-padding">
+      <ion-slides pager="true" [options]="slideOpts_coverflow">
+        <ion-slide>
+          <img src="/assets/img/testimonial/1.jpg" />
+          
+          <!-- <h1>Slide 1</h1> -->
+          <!-- <ion-button class="butAction">Start here</ion-button> -->
+
+        </ion-slide>
+        
+        <ion-slide>
+          <img src="/assets/img/testimonial/1.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+
+        <ion-slide>
+          <img src="/assets/img/testimonial/2.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+
+        <ion-slide>
+          <img src="/assets/img/testimonial/3.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+
+
+        <ion-slide>
+          <img src="/assets/img/testimonial/4.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        
+        <ion-slide>
+          <img src="/assets/img/testimonial/5.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+
+        <ion-slide>
+          <img src="/assets/img/testimonial/6.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+
+
+        <ion-slide>
+          <img src="/assets/img/testimonial/7.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/8.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/9.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/10.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/11.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/12.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/13.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/14.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/15.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/16.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/17.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/18.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/19.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+        <ion-slide>
+          <img src="/assets/img/testimonial/20.jpg" />
+          <!-- <h1>Slide 1</h1> -->
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+  </ion-row>
+</div>
+
+<!-- End of Display of Testimonial -->
+
+<ion-footer class="ion-no-border footer gradient1">
+  <!-- <ion-toolbar> -->
+    <!-- <ion-title>Footer - No Border</ion-title> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size-sm="4" size-xs="12" offset-sm="1"  class="ion-align-items-stretch">
+          <!-- <img src="/assets/img/ashon-brand.png" > -->
+          <div class="footer-logo"></div>
+          
+
+          
+        </ion-col>
+        <ion-col size-sm="3" size-xs="6"><span class="footer-bold">Contact Address</span>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-note><ion-icon  class="only-color" name="call">&nbsp;&nbsp;</ion-icon><span class="only-color">01902229306</span></ion-note>
+              </ion-col>
+            </ion-row>
+
+              <ion-row>
+                <ion-col>
+                  <!-- <ion-note><ion-icon name="call"></ion-icon> +23480-2344-3614</ion-note> -->
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col>
+                  <ion-note><ion-icon class="only-color" name="mail"></ion-icon> <span  class="only-color">info@dasafricana.com</span></ion-note>
+                </ion-col>
+              </ion-row>
+          </ion-grid>
+          
+          
+        </ion-col>
+        <ion-col size-sm="3" size-xs="6">
+          <span class="footer-bold">Useful Links</span>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-note><a href="about">About us</a></ion-note>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-note><a href="services">Services</a></ion-note>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-note><a href="menu">Menu</a></ion-note>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-note><a href="contact">Contact us</a></ion-note>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-note><a href="http://webmail.dasafricana.com/" target="_blank">Webmail</a></ion-note>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-col>
+        
+    
+      </ion-row>
+<ion-row>
+  <ion-col size-sm="10" offset-sm="1">
+    <ion-footer class="ion-text-center">
+      <ion-note class="ion-margin"><span class="only-color-light"> DasAfricana &copy;2023 Built by <a href="#" target="_blank"><span class="only-color-light">Photizo Technologies</span></a></span>
+     </ion-note>
+    </ion-footer>
+  </ion-col>
+</ion-row>
+      
+    </ion-grid>
+  
+</ion-footer>
+  <ion-fab vertical="top" horizontal="end" slot="fixed" class="ion-hide-sm-up fab">
+    <ion-fab-button (click)="showCategories('myPop')"><ion-icon name="ellipsis-vertical-outline"></ion-icon></ion-fab-button>
+  </ion-fab>
+</ion-content>

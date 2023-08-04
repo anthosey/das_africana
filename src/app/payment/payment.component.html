@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-toolbar class="menu-top">
+    
+        <ion-buttons slot="start">
+          <ion-button (click)="closeModal()"><ion-icon name="close-outline"></ion-icon></ion-button>
+        </ion-buttons>
+    
+        <ion-title>Post Payment</ion-title>    
+        
+      </ion-toolbar>
+  
+    </ion-header>
+  
+    <ion-content>
+      <form #f2="ngForm" (ngSubmit) ="onAddPayment(f2)">
+      <ion-grid>
+
+        <ion-row>
+          <ion-col>
+            
+              <ion-list>
+                <ion-item>
+                <ion-label>Select a company</ion-label>
+                <ion-select 
+                value="brown" 
+                okText="Okay" 
+                cancelText="Dismiss"
+                type="text" id="name" name="name" ngModel >
+                  <ion-select-option *ngFor="let member of coys;">{{ member.name }}</ion-select-option>
+                  <!-- <ion-select-option value="Coy2">Coy 2</ion-select-option>
+                  <ion-select-option value="Coy3">Coy 3</ion-select-option>
+                   -->
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col>
+            
+              <ion-list>
+                <ion-item>
+                <ion-label>Payment mode</ion-label>
+                <ion-select 
+                value="brown" 
+                okText="Okay" 
+                cancelText="Dismiss"
+                type="text" id="paymentMode" name="paymentMode" ngModel required>
+                  <ion-select-option >Cheque</ion-select-option>
+                  <ion-select-option >Cash</ion-select-option>
+                  <ion-select-option >Transfer</ion-select-option>
+                  
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col> 
+  
+
+            <ion-item>
+              <ion-label>Payment Date (mm dd yyyy)</ion-label>
+              <ion-datetime name="paymentDate" ngModel displayFormat="MM DD YY" placeholder="Select Date"></ion-datetime>
+            </ion-item>
+
+
+            <ion-item>
+              <ion-label position="floating">Amount</ion-label>
+              <ion-input type="number" id="amount" name="amount" ngModel></ion-input>
+            </ion-item>
+  
+          </ion-col>
+        </ion-row>
+  
+        <ion-row>
+          <ion-col>
+            
+              <ion-list>
+                <ion-item>
+                <ion-label>Year Due</ion-label>
+                <ion-select 
+                value="brown" 
+                okText="Okay" 
+                cancelText="Dismiss"
+                type="number" id="paymentYear" name="paymentYear" ngModel required>
+                  <ion-select-option >{{ year }}</ion-select-option>
+                  <ion-select-option >{{ year - 1}}</ion-select-option>
+                  <ion-select-option >{{ year - 2}}</ion-select-option>
+                  <ion-select-option >{{ year - 3}}</ion-select-option>
+                  <ion-select-option >{{ year - 4}}</ion-select-option>
+                  <ion-select-option >{{ year - 5}}</ion-select-option>
+                  <ion-select-option >{{ year - 6}}</ion-select-option>
+                  <ion-select-option >{{ year - 7}}</ion-select-option>
+                  <ion-select-option >{{ year - 8}}</ion-select-option>
+                  <ion-select-option >{{ year - 9}}</ion-select-option>
+                  <ion-select-option >{{ year - 10}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col class="ion-text-end">
+            <ion-button type="submit" size="large" fill="solid">Post Payment</ion-button>
+          </ion-col>
+        </ion-row>
+  
+        
+      </ion-grid>
+    </form>
+    </ion-content>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Das Africana</title>
+
+  <base href="/"/>
+
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="msapplication-tap-highlight" content="no"/>
+
+  <link rel="icon" type="image/png" href="assets/icon/logo1.png"/>
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+
+  <!-- Google API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBglIto2YHcaC5u3dZdLd5WkbOTgopr_qQ">
+  </script>
+</head>
+
+<body>
+
+  <app-root></app-root>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+  
+  <script>
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(9.075496,7.430918),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+    
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAyjdvIidlXYJ4UW4PumAwXrMGyk2AJ3M0",
+        authDomain: "dfh-website.firebaseapp.com",
+        projectId: "dfh-website",
+        storageBucket: "dfh-website.appspot.com",
+        messagingSenderId: "961402465426",
+        appId: "1:961402465426:web:62f481d7e83add87590a4b",
+        measurementId: "G-T6QT487KXW"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  
+</body>
+
+</html>

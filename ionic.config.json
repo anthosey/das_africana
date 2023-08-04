@@ -1,0 +1,7 @@
+{
+  "name": "Ashon-web",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

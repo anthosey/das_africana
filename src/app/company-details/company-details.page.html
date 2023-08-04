@@ -1,0 +1,314 @@
+<ion-toolbar class="menu-top ion-hide-sm-up">
+  <!-- <ion-title>Members</ion-title> -->
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+  
+      <!-- <ion-title>dash</ion-title> -->
+      <ion-grid>
+        <ion-row>
+          <ion-col size-sm="5" offset-sm="1" class="ion-text-start contact-space" >
+            <a href="#" id="email" class="fa fa-envelope"></a>
+            <!-- <span id="email1">info@ashonng.org</span>&nbsp; -->
+            <ion-note color="light"><ion-icon name="call"></ion-icon> +23414543168</ion-note>
+          </ion-col>
+  
+  
+          <ion-col size-sm="5" class="ion-text-end">
+            <!-- <ion-buttons slot="end"> -->
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+           
+              <!-- <ion-menu-button menu="first"></ion-menu-button> -->
+            <!-- <ion-button><ion-icon name="person">Login</ion-icon></ion-button> -->
+          <!-- </ion-buttons> -->
+          </ion-col>
+  
+          <!-- <ion-col size-sm="2" class="ion-text-end">
+            <a href="#" class="fa fa-user"></a><span>Login</span>
+          </ion-col> -->
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  <!-- </ion-header> -->
+
+<ion-content>
+  <div class="head-logo">
+    <ion-row >
+
+      <ion-col size-sm="3" offset-sm="1" class="ion-text-left head-space ion-hide-sm-down">
+        <ion-note><ion-icon name="mail"></ion-icon> contact@ashonng.org</ion-note><br />
+        
+          <ion-label style="font-size: 1.5rem;"><ion-icon name="call"></ion-icon> +2341-4543168</ion-label>
+        </ion-col>
+      
+        <ion-col size-sm="4" size-xs="12" class="ion-text-center">
+          <!-- <img src="/assets/img/logo1.png">
+           -->
+           <div class="top-logo"></div>
+        </ion-col>
+
+        <ion-col size-sm="3" class="ion-text-end head-space ion-hide-sm-down">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-user"></a><span style="cursor: pointer">Login</span>
+        </ion-col>
+    </ion-row>
+  </div>
+
+  <div id="ribbon-section" class="ion-hide-sm-down">
+    <!-- Category Section -->
+    <ion-row>
+      <ion-col size-sm="7" offset-sm="1"
+       id="links" 
+       class="ion-text-start"
+       style="padding-right: .5rem;">
+       
+         
+         
+       <a href="home" >Home</a>
+       <a href="about" >About us</a>
+       <a href="gallery">Gallery</a>
+       <a href="code" >Code of Conduct</a>
+       <a href="members" class="active">Members</a>
+       <a href="downloads">Downloads</a>
+       <a href="contact">Contact us</a>
+       </ion-col>
+       
+   
+       <ion-col size-sm="3"
+       class="ion-hide-sm-down ion-text-end ion-no-padding ion-no-margin ion-text-end" 
+       id="menu-phone">
+         <span>      
+         <a href="#" class="fa fa-phone ion-no-padding"></a>
+             +23480-2344-3614</span> 
+         </ion-col>
+       </ion-row>
+  </div>
+
+  <div class="members-head"> 
+    <ion-card-title color="light" class="ion-text-center">
+      <div class="g-plate">
+        Members
+      </div>
+      </ion-card-title>
+    <!-- <ion-note class="ion-text-center">Association of Secirities Dealing Houses of Nigeria</ion-note> -->
+  </div>
+
+  <div class="ion-text-center space-header" >
+    <ion-row> <!-- Featured Products-->
+      <ion-col size-sm="10" 
+      offset-sm="1">
+        <!-- <ion-card>
+          <ion-card-header>FEATURED PRODUCTS -->
+            <!-- ASHON Members -->
+            {{ member.name}}
+          <!-- </ion-card-header>
+        </ion-card> -->
+          </ion-col>
+    </ion-row>
+
+    <ion-row> <!-- Featured Products-->
+      <ion-col size-sm="10" offset-sm="1">
+      <ion-button (click)="backHome()">Back</ion-button>
+      </ion-col>
+    </ion-row>
+</div>
+
+<div id="memberMobile">
+  <ion-row>
+    <ion-col size-sm="10" offset-sm="1">
+      <ion-card class="card-style">
+        <ion-card-header>
+        <ion-row>
+          <ion-col size-sm="4"><ion-card-title class="bold-header">Registered Function::</ion-card-title></ion-col>
+          <ion-col size-sm="8"><ion-card-title> {{ member.regFunction}}</ion-card-title></ion-col>
+        </ion-row>
+        </ion-card-header>
+      
+
+        <ion-card-header>
+          <ion-row>
+            <ion-col size-sm="4"><ion-card-title class="bold-header">Address::</ion-card-title></ion-col>
+            <ion-col size-sm="8"><ion-card-title> {{member.address}}</ion-card-title></ion-col>
+          </ion-row>
+        </ion-card-header>
+
+        <ion-card-header>
+          <ion-row>
+            <ion-col size-sm="4"><ion-card-title class="bold-header">Contact Email::</ion-card-title></ion-col>
+            <ion-col size-sm="8"><ion-card-title> {{ member.email }}</ion-card-title></ion-col>
+          </ion-row>
+        </ion-card-header>
+
+
+        <ion-card-header>
+          <ion-row>
+            <ion-col size-sm="4"><ion-card-title class="bold-header">Contact Phone::</ion-card-title></ion-col>
+            <ion-col size-sm="8"><ion-card-title> {{ member.phone }}</ion-card-title></ion-col>
+          </ion-row>
+        </ion-card-header>
+
+        <ion-card-header>
+          <ion-row>
+            <ion-col size-sm="4"><ion-card-title class="bold-header">Payment for the year::</ion-card-title></ion-col>
+            <ion-col size-sm="8"><ion-card-title> {{ accountStatus }}</ion-card-title></ion-col>
+          </ion-row>
+        </ion-card-header>
+        
+        
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</div>
+
+<div class="ion-text-center space-sub-header" >
+  <ion-row> <!-- Featured Products-->
+    <ion-col size-sm="10" 
+    offset-sm="1">
+      <!-- <ion-card>
+        <ion-card-header>FEATURED PRODUCTS -->
+          Payment History
+        <!-- </ion-card-header>
+      </ion-card> -->
+        </ion-col>
+  </ion-row>
+</div>
+
+<div id="memberPc">
+  <ion-row>
+    <ion-col size-sm="10" offset-sm="1">
+
+      <!-- Header -->
+      <ion-row class="members">
+        <ion-col size-sm="4">Member's name</ion-col>
+        <ion-col size-sm="2">Payment Date</ion-col>
+        <ion-col size-sm="2">Payment Mode</ion-col>
+        <ion-col size-sm="2">Year</ion-col>
+        <ion-col size-sm="2">Amount</ion-col>
+        
+      </ion-row>
+      <!-- End of header -->
+      <ion-row *ngFor="let ph of paymentHistory; let x = index;">
+        
+            <ion-col size-sm="4">{{x + 1}}. {{ph.name}}</ion-col>
+            <ion-col size-sm="2">{{ ph.paymentDate | date:"dd/MM/yyyy"}}</ion-col>
+            <ion-col size-sm="2">{{ ph.paymentMode}}</ion-col>
+            <ion-col size-sm="2">{{ ph.paymentYear}}</ion-col>
+            <ion-col size-sm="2">{{ ph.amount}}</ion-col>
+            
+      </ion-row>
+        
+    </ion-col>
+  </ion-row>
+</div>
+
+
+  <ion-footer class="ion-no-border footer gradient1">
+    <!-- <ion-toolbar> -->
+      <!-- <ion-title>Footer - No Border</ion-title> -->
+      <ion-grid>
+        <ion-row>
+          <ion-col size-sm="4"  size-xs="12" offset-sm="1" class="text ion-align-items-stretch">
+            <!-- <img src="/assets/img/ashon-brand.png" > -->
+            <div class="footer-logo"></div>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <ion-note><ion-icon name="location"></ion-icon>Medife House(3rd Floor), 58/60 Broad Street, Lagos Island, Lagos.</ion-note>
+                </ion-col>
+              </ion-row>
+  
+                <ion-row>
+                  <ion-col>
+                    <ion-note><ion-icon name="call"></ion-icon> +23480-2344-3614</ion-note>
+                  </ion-col>
+                </ion-row>
+  
+                <ion-row>
+                  <ion-col>
+                    <ion-note><ion-icon name="mail"></ion-icon> info@ashonng.org</ion-note>
+                  </ion-col>
+                </ion-row>
+            </ion-grid>
+  
+            
+          </ion-col>
+          <ion-col size-sm="3" size-xs="6"><span class="footer-bold">Useful links</span>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <ion-note><a href="about">About us</a></ion-note>
+                </ion-col>
+              </ion-row>
+  
+              <ion-row>
+                <ion-col>
+                  <ion-note><a href="gallery">Gallery</a></ion-note>
+                </ion-col>
+              </ion-row>
+  
+              <ion-row>
+                <ion-col>
+                  <ion-note><a href="members">Members</a></ion-note>
+                </ion-col>
+              </ion-row>
+  
+              <ion-row>
+                <ion-col>
+                  <ion-note><a href="downloads">Downloads</a></ion-note>
+                </ion-col>
+              </ion-row>
+  
+  
+              <ion-row>
+                <ion-col>
+                  <ion-note><a href="#">Contact us</a></ion-note>
+                </ion-col>
+              </ion-row>
+  
+              <ion-row>
+                <ion-col>
+                  <ion-note><a href="http://mail.ashonng.org/" target="_blank">Webmail</a></ion-note>
+                </ion-col>
+              </ion-row>
+              
+            </ion-grid>
+          </ion-col>
+          <ion-col size-sm="3" size-xs="6">
+            <span class="footer-bold">Join our new letters now</span>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <ion-note>Get email updates about our Association</ion-note>
+                </ion-col>
+              </ion-row>
+  
+              <ion-row>
+                <ion-col>
+                  <ion-input placeholder ="Please write your email" color="dark" clearinput type="text"></ion-input><ion-button>Subscribe</ion-button>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          
+      
+        </ion-row>
+  <ion-row>
+    <ion-col size-sm="10" offset-sm="1">
+      <ion-footer class="ion-text-center">
+        <ion-note class="ion-margin">
+          ashonng.org &copy;2021 Built by <a href="#" target="_blank">Photizo Technologies</a></ion-note>
+      </ion-footer>
+    </ion-col>
+  </ion-row>
+        
+      </ion-grid>
+    <!-- </ion-toolbar> -->
+  
+  </ion-footer>
+  <ion-fab vertical="top" horizontal="end" slot="fixed" class="ion-hide-sm-up fab">
+    <ion-fab-button (click)="showCategories('myPop')"><ion-icon name="ellipsis-vertical-outline"></ion-icon></ion-fab-button>
+  </ion-fab>
+
+</ion-content>

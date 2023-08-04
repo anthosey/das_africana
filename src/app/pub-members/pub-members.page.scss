@@ -1,0 +1,46 @@
+.g-plate {
+    background-color: #382126; opacity: .8; border-radius: 0%;
+    padding: 2rem; font-size: 4rem; 
+  }
+
+  .members {
+    font-weight: bold; 
+    background-color: var(--ion-color-secondary); 
+    padding:.6rem;
+  }
+
+  #memberPc {
+
+  }
+
+  #memberPc a{
+    text-decoration: none;
+    margin: .2rem;
+    // border-style: solid;
+    border-color: var(--ion-color-tertiary);
+    // padding:.5rem;
+  }
+
+  #memberPc a:hover{
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+
+  #memberMobile {
+    
+  }
+
+  #memberMobile a{
+    text-decoration: none;
+    margin: .2rem;
+    // border-style: solid;
+    border-color: var(--ion-color-tertiary);
+    // padding:.5rem;
+  }
+
+  #memberMobile a:hover{
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
